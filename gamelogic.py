@@ -21,9 +21,9 @@ class GameLogic:
 
         if user_guess == self.target_number:
             result = f'Вітаємо! Ви вгадали число {self.target_number} за {self.attempts} спроб.'
-            self.start_new_game() 
+            self.start_new_game()
         elif self.attempts >= self.max_attempts:
-            result = f'Ви не вгадали число {self.target_number}. Нове число: {self.target_number}'
+            result = f'Ви не вгадали число {self.target_number}'
             self.start_new_game()
         elif user_guess < self.target_number:
             result = 'Спробуйте більше.'
